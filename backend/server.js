@@ -17,9 +17,9 @@ app.use(cors())
 app.use(express.json());
 //  to accept json data
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+// app.get('/', (req, res) => {
+//   res.send('Hello World!')
+// })
 
 // app.get('/api/chat', (req, res) => {
 //   res.send(chats)
