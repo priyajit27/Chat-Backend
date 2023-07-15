@@ -32,7 +32,7 @@ app.use(express.json());
 // })
 
 app.use('/api/user',userRoutes)
-app.use('/api/chats',chatRoutes)
+app.use('/api/chat',chatRoutes)
 app.use('/api/message',messageRoutes)
 
 app.use(notFound)
@@ -46,7 +46,7 @@ const server = app.listen(port,
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "https://chat-web-application.netlify.app/",
+    origin: "http://localhost:3000",
     // credentials: true,
   },
 });
